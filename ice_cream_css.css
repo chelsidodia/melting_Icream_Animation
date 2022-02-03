@@ -1,0 +1,310 @@
+.container{
+	width: 100%;
+	height: 97vh;
+	background-color: white;
+}
+
+.icecream-container{
+	position: relative;
+	margin: auto;
+	width: 400px;
+	height: 98vh;
+}
+
+
+
+.cone{
+	background-color: rgb(255, 128, 0);
+	height: 290px;
+	width: 220px;
+	margin: auto;
+	position: relative;
+	transform: translateY(385px);
+	z-index: 0;
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+}
+
+.cone-shadow{
+	position: absolute;
+	height: 40%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.2);
+	transform: rotate(-40deg);
+	margin-top: 20px;
+}
+
+.cone-texture
+{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1px;
+	transform: rotate(45deg);
+}
+
+.square{
+	width: 10px;
+	height: 10px;
+	border: 3px solid rgba(255, 179, 102,0.7);
+	background-color: rgba(255, 153, 51,0.5);
+	box-shadow: 0 0 2px rgb(255, 179, 102);
+}
+
+.cone-side-1{
+	width: 100px;
+	height: 315px;
+	background-color: white;
+	margin: auto;
+	z-index: 10;
+	margin-top: 390px;
+	position: absolute;
+	margin-left: 46px;
+	transform: rotate(-20deg);
+}
+
+.cone-side-2{
+	width: 100px;
+	height: 315px;
+	background-color: white;
+	margin: auto;
+	z-index: 10;
+	margin-top: 390px;
+	position: absolute;
+	margin-left: 255px;
+	transform: rotate(20deg);
+}
+
+.cone-tip{
+	width: 11px;
+	height: 11px;
+	background-color: rgb(255, 128, 0);
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 195px;
+	position: absolute;
+	margin-top: 377px;
+	z-index: 31;
+}
+
+.scoop-1{
+	width: 220px;
+	height: 100px;
+	background-color: rgb(255, 179, 179);
+	position: absolute;
+	z-index: 12;
+	margin-left: 90px;
+	margin-top: -3px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	display: flex;
+	flex-direction: row;
+}
+
+.scoop-tip{
+	width: 56px;
+	height: 55px;
+	z-index: 13;
+	border-radius: 50px;
+	margin-top: 67px;
+}
+
+.scoop-1 .scoop-tip{
+	background-color: rgb(255, 179, 179);
+}
+
+.scoop-2{
+	width: 220px;
+	height: 100px;
+	background-color: rgb(179, 230, 255);
+	position: absolute;
+	z-index: 12;
+	margin-left: 90px;
+	margin-top: -80px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	display: flex;
+	flex-direction: row;	
+}
+
+.scoop-2 .scoop-tip{
+	background-color: rgb(179, 230, 255);
+}
+
+.scoop-3{
+	width: 220px;
+	height: 100px;
+	background-color: rgb(51, 255, 119);
+	position: absolute;
+	z-index: 12;
+	margin-left: 90px;
+	margin-top: -155px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	display: flex;
+	flex-direction: row;	
+}
+
+.scoop-3 .scoop-tip{
+	background-color: rgb(51, 255, 119);
+}
+
+.face{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	margin-left: 155px;
+	margin-top: -30px;
+	z-index: 20;
+}
+
+.eyes{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+}
+
+.eye{
+	height: 15px;
+	width: 15px;
+	margin: 7px auto;
+	background-color: black;
+	border-radius: 60%;
+	animation: blink 1.5s infinite; 
+}
+
+.mouth{
+	width: 50px;
+	height: 30px;
+	background-color: black;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	/*
+	animation: mouth 5s infinite;
+	*/
+}
+
+.tongue{
+width: 27px;
+height: 27px;
+background-color: red;
+border-radius: 50px;
+margin: auto;
+padding: 0;
+transform: translateY(11px);
+}
+
+.scoop-melt{
+	width: 15px;
+	height: 30px;
+	position: absolute;
+	background-color: rgb(255, 179, 179);
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	margin-left: 290px;
+	z-index: 13;
+	margin-top: 100px;
+}
+
+.scoop-melt-floor{
+	height: 20px;
+	width: 40px;
+	position: absolute;
+	background-color: rgb(255, 179, 179);
+	border-radius: 100%;
+	margin-top: 380px;
+	margin-left: 277px;
+	z-index: 31;	
+}
+
+.scoop-melt-floor-1{
+	height: 27px;
+	width: 70px;
+	position: absolute;
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 100%;
+	margin-top: 382px;
+	margin-left: 166px;
+	z-index: 30;	
+}
+
+.melting-ball{
+	width: 15px;
+	height: 15px;
+	background-color: rgb(255, 179, 179);
+	border-radius: 50px;
+	z-index: 50;
+	margin-left: 290px;
+	margin-top: 110px;
+	/*start-point: 110px; 
+	end-point: 380; */
+	position: absolute;
+	animation: melt 2s infinite ease-out;
+}
+
+.melting-ball-1{
+	width: 15px;
+	height: 15px;
+	background-color: rgb(255, 179, 179);
+	border-radius: 50px;
+	z-index: 50;
+	margin-left: 290px;
+	margin-top: 110px;
+	/*start-point: 110px; 
+	end-point: 380; */
+	position: absolute;
+	animation: melt 2s infinite ease-out;
+	animation-delay: 1s;
+}
+
+@keyframes blink{
+	0%{
+		transform: scale(1, 1);
+	}
+	50%{
+		transform: scale(1, 1);
+	}
+	75%{
+		transform: scale(1 , 0);
+	}
+	100%{
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes mouth{
+	0%{
+		transform: scale(1, 1);
+	}
+	50%{
+		transform: scale(1, 1);
+	}
+	75%{
+		transform: scale(1 , 0.1);
+	}
+	100%{
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes melt{
+	0%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(270px);
+	}
+}
+
+@media max-width: 600px{
+
+}
